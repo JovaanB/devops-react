@@ -38,15 +38,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy dev
-        uses: bobrown101/deploy-branch@v2.0.0
-        with:
-          provider: NETLIFY
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          branch: dev
-          github-token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-
       - name: Netlify Deploy
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
