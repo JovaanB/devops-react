@@ -46,4 +46,3 @@ jobs:
           NETLIFY_DEPLOY_MESSAGE: "Prod deploy v${{ github.ref }}"
           NETLIFY_DEPLOY_TO_PROD: true
           install_command: npm
-          node_version: 17.9.0
