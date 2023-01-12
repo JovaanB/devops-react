@@ -10,6 +10,7 @@ function App() {
         <p>With Github Actions</p>
         <ul>
           <li>Jovan BIENVENU</li>
+          <li>ENIGMA 5ème année</li>
         </ul>
       </header>
     </div>
